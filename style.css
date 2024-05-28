@@ -1,0 +1,90 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.navigation {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #ff6347;
+}
+
+.nav-order-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #ff6347;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-order-btn:hover {
+    background-color: #ff4500;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/pexels-pixabay-262978.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-container h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-container p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.hero-order-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #ff6347;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-order-btn:hover {
+    background-color: #ff4500;
+}
