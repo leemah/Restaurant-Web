@@ -1,20 +1,25 @@
 /* styles.css */
-body, html {
+body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     font-family: Arial, sans-serif;
 }
 
-.navigation {
+nav {
     position: absolute;
     top: 0;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     background: rgba(0, 0, 0, 0.5);
-    padding: 10px 0;
+    padding: 10px 0px;
+   
+}
+nav .navigation {
+    display: flex;
+    margin-right: 50px;
 }
 
 .nav-menu {
@@ -36,10 +41,10 @@ body, html {
 }
 
 .nav-order-btn {
-    padding: 10px 20px;
+    padding: 8px 15px;
     font-size: 1em;
     color: #fff;
-    background-color: #ff6347;
+    background-color: #E30011;
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -69,17 +74,40 @@ body, html {
     margin: 0;
 }
 
-.hero-container p {
-    font-size: 1.2em;
-    margin: 20px 0;
+.hero-container h2 {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #E30011;
 }
 
+.hero-container p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.hero-btn{
+    display: flex;
+}
+
+.hero-btn .hero-menu-btn{
+    margin-left: 10px;
+}
 .hero-order-btn {
     padding: 10px 20px;
     font-size: 1em;
     color: #fff;
-    background-color: #ff6347;
+    background-color: #E30011;
     border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.hero-menu-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #E30011;
+    background-color: transparent;
+    border: 1px solid #E30011;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -88,3 +116,58 @@ body, html {
 .hero-order-btn:hover {
     background-color: #ff4500;
 }
+.hero-menu-btn:hover {
+    background-color: #ff4500;
+    cursor: pointer;
+    color: #f9f9f9;
+    
+}
+
+
+/* our popular dish starts here */
+
+/* #popular-dishes{
+    margin-top: 80px;
+}
+
+#popular-dishes h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dishes-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+    margin-top: 50px;
+    padding: 0px 80px;
+    
+}
+.dish-content{
+    text-align: start;
+    background: #f9f9ff;
+    width: 300px;
+    height: 50vh;
+    position: relative;
+    
+}
+
+ .dish-content img{
+    width: 100%;
+    height: 40%;
+    background-size: cover;
+    background-position: center;
+
+} */
+
+/* our popular dish ends here */
+
+/* our kitchen starts here */
+#our-kitchen{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/pexels-vanmalidate-769289.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+/* our kitchen ends here */
